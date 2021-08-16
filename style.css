@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    font-size: 65.5%;
+}
+
+.box{
+    padding: 5rem;
+}
+
+.gridContainer{
+    border: 1rem solid #333;
+    display: grid;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "four five three" "two one .";
+
+
+}
+
+
+
+.one{
+    background: rebeccapurple;
+    grid-area: one;
+}
+.two{
+    background: greenyellow;
+    grid-area: two;
+}
+.three{
+    background: aquamarine;
+    grid-area: three;
+}
+.four{
+    background: hotpink;
+    grid-area: four;
+}
+/* .four{
+    background: turquoise;
+} */
+.five{
+    background: indianred;
+    grid-area: five;
+}
